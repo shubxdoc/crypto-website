@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { Header } from "./components/Common";
 import { Home, Dashboard, CoinPage, WatchList } from "./pages";
 import { ThemeProvider } from "@emotion/react";
