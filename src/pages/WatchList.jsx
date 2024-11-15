@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import Tabs from "../components/Dashboard/Tabs/Tabs";
 import { Button } from "../components/Common";
 import { CoinContext } from "../context/CoinContext";
+import { Link } from "react-router-dom";
 
 function WatchList() {
   const [watchlistCoins, setWatchlistCoins] = useState([]);
@@ -45,9 +46,9 @@ function WatchList() {
               margin: "2rem",
             }}
           >
-            <a href="/dashboard">
+            <Link to="/dashboard">
               <Button text="Dashboard" />
-            </a>
+            </Link>
           </div>
         </div>
       )}
