@@ -27,6 +27,7 @@ function App() {
               <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/watchlist" element={<WatchList />} />
               <Route path="/coin/:id" element={<CoinPage />} />
+              <Route path="*" element={<Navigate to="/dashboard" />} />
             </Routes>
           </BrowserRouter>
         </ThemeProvider>
