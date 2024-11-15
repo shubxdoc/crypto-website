@@ -28,7 +28,7 @@ function WatchList() {
     if (coins.length > 0) {
       fetchWatchlistCoins();
     }
-  }, [coins]);
+  }, [coins, watchlistCoins]);
 
   return (
     <div>
